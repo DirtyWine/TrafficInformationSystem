@@ -1,4 +1,5 @@
 <template>
+
   <el-container>
     <el-main>
       <el-row :gutter="10">
@@ -60,6 +61,7 @@
 <script>
   import axios from 'axios'
 
+
   var instance  = axios.create({
     baseURL: 'localhost:8080',
     timeout: 1000,
@@ -70,6 +72,7 @@
     name: "SignIn",
     data () {
       return {
+<<
         user: {
           user_name: '',
           user_password: '',
@@ -115,12 +118,16 @@
 <style scoped>
 
   /* --- welcome style --- */
+
   @media screen and (max-width:992px) {
-    .welcome-line { display: none }
+    .welcome-line { d>>>>>>> master
+125
+isplay: none }
   }
   .welcome-line {
     margin-top: 350px;
   }
+
   h1,h2 {
     text-align: left;
     font-style: italic;
@@ -163,6 +170,7 @@
     font-weight: bold;
     font-size: 15px;
   }
+
 
   .form-view a:hover {
     color: #234985;

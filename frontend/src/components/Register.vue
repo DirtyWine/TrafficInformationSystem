@@ -87,7 +87,7 @@
   export default {
     name: "Register",
     data () {
-      var validatePass = (rule, value, callback) => {
+    var validatePass = (rule, value, callback) => {
         if (value === '') {
           callback(new Error('Please input password'));
         } else {
@@ -165,7 +165,6 @@
 </script>
 
 <style scoped>
-
   /* --- form-view --- */
   .form-view {
     background: white;
@@ -195,6 +194,7 @@
     font-weight: bold;
     font-size: 15px;
   }
+
 
   .form-view a:hover {
     color: #234985;
